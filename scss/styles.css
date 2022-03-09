@@ -6,6 +6,16 @@
           box-sizing: border-box;
 }
 
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+}
+
 body {
   font-family: "Avenir";
   font-weight: normal;
@@ -401,6 +411,10 @@ img.freecounciling {
 }
 
 /***************** Section 7 **************/
+img.freecouncilingMobile {
+  display: none;
+}
+
 .section7Div1 {
   font-size: 45%;
   position: absolute;
@@ -423,6 +437,10 @@ button.check-availabilityopposite {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px;
+}
+
+img.eligibilityImgMobile {
+  display: none;
 }
 
 img#newsImg {
@@ -467,10 +485,15 @@ div#footerDiv1 {
           justify-content: space-between;
 }
 
+p#footerParagraph {
+  font-size: 16px;
+}
+
 a#footerLink {
   color: white;
   text-decoration: none;
   margin: 5px 10px 5px;
+  font-size: 18px;
 }
 
 .footerDiv2 {
@@ -478,6 +501,11 @@ a#footerLink {
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+}
+
+img#footerImg {
+  margin: 10px;
+  width: 15%;
 }
 
 img.footerLogo {
@@ -645,6 +673,33 @@ img.footerLogo {
 
 /************** Small-Phone : **********/
 @media screen and (max-width: 600px) {
+  .footerDiv2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  div#footerDiv1 {
+    display: -ms-grid;
+    display: grid;
+  }
+  img.footerLogo {
+    width: 40%;
+  }
+  img.freecouncilingMobile {
+    display: block;
+    width: 100%;
+  }
+  .section7Div1,
+  img.freecounciling {
+    display: none;
+  }
+  img.eligibilityImg {
+    display: none;
+  }
+  img.eligibilityImgMobile {
+    display: block;
+  }
   .skills,
   .section6Div2 {
     display: -ms-grid;

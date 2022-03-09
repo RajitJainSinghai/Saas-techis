@@ -4,6 +4,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
 body {
   font-family: $avenir;
   font-weight: normal;
@@ -291,6 +296,9 @@ img.freecounciling {
   width: 100%;
 }
 /***************** Section 7 **************/
+img.freecouncilingMobile {
+  display: none;
+}
 .section7Div1 {
   font-size: 45%;
   position: absolute;
@@ -308,6 +316,9 @@ button.check-availabilityopposite {
   display: flex;
   justify-content: space-around;
   padding: 30px;
+}
+img.eligibilityImgMobile {
+  display: none;
 }
 img#newsImg {
   width: 8%;
@@ -341,15 +352,23 @@ div#footerDiv1 {
   display: flex;
   justify-content: space-between;
 }
+p#footerParagraph {
+  font-size: 16px;
+}
 
 a#footerLink {
   color: white;
   text-decoration: none;
   margin: 5px 10px 5px;
+  font-size: 18px;
 }
 .footerDiv2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+img#footerImg {
+  margin: 10px;
+  width: 15%;
 }
 
 img.footerLogo {
@@ -502,6 +521,30 @@ img.footerLogo {
 
 /************** Small-Phone : **********/
 @media screen and (max-width: $small-phone) {
+  .footerDiv2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  div#footerDiv1 {
+    display: grid;
+  }
+  img.footerLogo {
+    width: 40%;
+  }
+  img.freecouncilingMobile {
+    display: block;
+    width: 100%;
+  }
+  .section7Div1,
+  img.freecounciling {
+    display: none;
+  }
+  img.eligibilityImg {
+    display: none;
+  }
+  img.eligibilityImgMobile {
+    display: block;
+  }
   .skills,
   .section6Div2 {
     display: grid;
