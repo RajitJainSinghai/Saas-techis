@@ -20,8 +20,7 @@ body {
   font-family: "Avenir";
   font-weight: normal;
   font-size: 24px;
-  font-style: normal;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 header {
@@ -65,7 +64,7 @@ select#courses {
   font-weight: 400;
   color: #101010bf;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: white;
 }
 
 img.image-preview {
@@ -121,8 +120,8 @@ img.client-logo {
 .company-logo {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr [];
-  grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   width: 50%;
 }
 
@@ -341,7 +340,7 @@ img.section5HeroImg {
 }
 
 span#headingInsidepara {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
 }
 
@@ -422,8 +421,16 @@ img.freecouncilingMobile {
   color: white;
 }
 
+h1#section7H1 {
+  font-size: 2vw;
+}
+
+p#section7P {
+  font-size: 1vw;
+}
+
 button.check-availabilityopposite {
-  background-color: #ffffff;
+  background-color: white;
   color: #00abae;
   border: 0;
   padding: 10px 20px;
@@ -486,7 +493,7 @@ div#footerDiv1 {
 }
 
 p#footerParagraph {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a#footerLink {

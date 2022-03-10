@@ -1,7 +1,7 @@
 @import "../variables/variables";
 * {
-  padding: 0;
-  margin: 0;
+  padding: $zero;
+  margin: $zero;
   box-sizing: border-box;
 }
 img {
@@ -13,13 +13,12 @@ body {
   font-family: $avenir;
   font-weight: normal;
   font-size: $medium-heading;
-  font-style: normal;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
+  display: $flex;
+  justify-content: $space-between;
   margin: 20px;
 }
 .topnav {
@@ -37,44 +36,44 @@ img.logo {
   color: $black;
   text-align: center;
   padding: 14px 13px;
-  text-decoration: none;
+  text-decoration: $none;
   font-size: $small-heading;
   font-weight: $normal;
 }
 
 .topnav .icon {
-  display: none;
+  display: $none;
 }
 
 select#courses {
-  border: 0;
+  border: $zero;
   font-size: $small-heading;
   font-weight: $semi-bold;
   color: $light-black;
   font-style: normal;
-  background-color: #ffffff;
+  background-color: $white;
 }
 img.image-preview {
-  width: 100%;
+  width: $hundred;
 }
 img.image-previewmobile {
-  display: none;
+  display: $none;
 }
 .button {
-  display: flex;
+  display: $flex;
 }
 
 button.check-availability {
   padding: 15px 25px;
   background-color: $main-color;
-  border: 0;
+  border: $zero;
   margin: 20px;
-  color: white;
+  color: $white;
   border-radius: 10px;
 }
 section.section1 {
-  display: flex;
-  justify-content: space-between;
+  display: $flex;
+  justify-content: $space-between;
   margin: 80px;
 }
 .section1Div2 {
@@ -93,14 +92,13 @@ img.client-logo {
 }
 
 .company-logo {
-  display: grid;
-  -ms-grid-columns: (1fr) [];
-  grid-template-columns: repeat(3, 1fr);
+  display: $grid;
+  grid-template-columns: $repeat-three;
   width: 50%;
 }
 button.button1 {
   border: 1px solid #e7e7e7;
-  background-color: white;
+  background-color: $white;
   border-radius: 10px;
   margin: 8px;
 }
@@ -112,16 +110,16 @@ img.company-img {
 /*******************Section 2 ********************/
 
 section.section2 {
-  box-shadow: 0 4px 8px 0 (0 0 0 / 20%);
+  box-shadow: $card;
   transition: 0.3s;
-  width: 100%;
+  width: $hundred;
   background-color: #f1f1f1;
   border-radius: 59px 120px 0px 5px;
   margin-top: 40px;
 }
 .section2Div1 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img.imgPreview {
   width: 40%;
@@ -132,8 +130,8 @@ img.imgPreview {
   margin: 170px 30px 0px 0px;
 }
 .two {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img.circle2 {
   position: relative;
@@ -142,24 +140,24 @@ img.circle2 {
 }
 /*****************section 3******************/
 section.section3 {
-  display: flex;
-  justify-content: space-between;
+  display: $flex;
+  justify-content: $space-between;
   margin: 35px;
 }
 .section3Div1 {
-  font-size: 18px;
+  font-size: $small-heading;
   margin: 40px;
 }
 img.section3heroimg {
   width: 90%;
 }
 img.section3heroimgmobile {
-  display: none;
+  display: $none;
 }
 .questions {
   border: 1px solid black;
-  display: flex;
-  justify-content: space-between;
+  display: $flex;
+  justify-content: $space-between;
   padding: 10px;
   margin: 10px;
 }
@@ -169,17 +167,17 @@ img#plus {
 
 /***********section4 *****************/
 section.section4 {
-  box-shadow: 0 4px 8px 0 (0 0 0 / 20%);
+  box-shadow: $card;
   transition: 0.3s;
-  width: 100%;
+  width: $hundred;
   background-color: #f1f1f1;
   border-top-left-radius: 100px;
   padding: 25px;
 }
 
 .section4Div1 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img#section4img {
   width: 30%;
@@ -188,17 +186,17 @@ p#section4P {
   padding: 35px;
 }
 span#companyName {
-  color: #00abae;
+  color: $main-color;
   font-weight: bold;
 }
 /****************** section 5 ******************/
 .section5DivTop {
-  display: flex;
-  justify-content: space-evenly;
+  display: $flex;
+  justify-content: $space-evenly;
 }
 .section5Div1 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img#section5Img {
   width: 50%;
@@ -208,22 +206,22 @@ h1#section5H1 {
   font-size: 30px;
 }
 .section5Div2 {
-  box-shadow: 0 4px 8px 0 (0 0 0 / 20%);
+  box-shadow: $card;
   transition: 0.3s;
   width: 44%;
-  font-size: 18px;
+  font-size: $small-heading;
   border: 1px solid #c7c7c7;
   border-radius: 20px;
 }
 div#section5Div3 {
-  display: flex;
+  display: $flex;
 }
 .section5Div3 {
-  display: flex;
+  display: $flex;
   margin: 30px;
 }
 img#userImg {
-  width: 100%;
+  width: $hundred;
 }
 div#section5Div5 {
   margin: 25px;
@@ -236,8 +234,8 @@ p#insideParagraph {
   color: gray;
 }
 .section5DivTop2 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
   margin: 50px;
 }
 img.section5HeroImg {
@@ -248,7 +246,7 @@ img.section5HeroImg {
   margin: 30px;
 }
 span#headingInsidepara {
-  font-size: 16px;
+  font-size: $small-heading;
   font-weight: 500;
 }
 p#discription {
@@ -256,76 +254,82 @@ p#discription {
 }
 /*******************section 6 **************************/
 .section6Div1 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img#studentportfolio {
-  width: 100%;
+  width: $hundred;
   object-fit: revert;
 }
 a#studentlink {
   margin: 70px;
-  text-decoration: none;
+  text-decoration: $none;
   color: black;
   font-size: 2vw;
   margin: 35px;
 }
 .skills {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img#skillsneeded {
   width: 15%;
 }
 span#color {
-  color: #00abae;
+  color: $main-color;
 }
 .section6Div2 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
 }
 img#alumini {
   width: 18%;
-  border: 1px solid whitesmoke;
+  border: 1px solid $smokey-white;
   margin: auto;
 }
 img.eligibilityImg {
   width: 80%;
 }
 img.freecounciling {
-  width: 100%;
+  width: $hundred;
 }
 /***************** Section 7 **************/
 img.freecouncilingMobile {
-  display: none;
+  display: $none;
 }
 .section7Div1 {
   font-size: 45%;
   position: absolute;
   margin: 6% 20% 10% 50%;
-  color: white;
+  color: $white;
+}
+h1#section7H1 {
+  font-size: 2vw;
+}
+p#section7P {
+  font-size: 1vw;
 }
 button.check-availabilityopposite {
-  background-color: #ffffff;
-  color: #00abae;
-  border: 0;
+  background-color: $white;
+  color: $main-color;
+  border: $zero;
   padding: 10px 20px;
   margin-top: 10px;
 }
 .section7Div2 {
-  display: flex;
-  justify-content: space-around;
+  display: $flex;
+  justify-content: $space-around;
   padding: 30px;
 }
 img.eligibilityImgMobile {
-  display: none;
+  display: $none;
 }
 img#newsImg {
   width: 8%;
 }
 section.faq {
   background-color: #f4f4f4;
-  width: 100%;
+  width: $hundred;
 }
 p#faqParagraph {
   font-size: 12px;
@@ -333,14 +337,14 @@ p#faqParagraph {
   color: #575757;
 }
 span#question {
-  font-size: 18px;
+  font-size: $small-heading;
   color: black;
   font-weight: 500;
 }
 /********************** Footer ****************/
 footer {
   background-color: black;
-  color: white;
+  color: $white;
 }
 
 .footer {
@@ -349,22 +353,22 @@ footer {
   margin: 0 30px;
 }
 div#footerDiv1 {
-  display: flex;
-  justify-content: space-between;
+  display: $flex;
+  justify-content: $space-between;
 }
 p#footerParagraph {
-  font-size: 16px;
+  font-size: $small-heading;
 }
 
 a#footerLink {
-  color: white;
-  text-decoration: none;
+  color: $white;
+  text-decoration: $none;
   margin: 5px 10px 5px;
-  font-size: 18px;
+  font-size: $small-heading;
 }
 .footerDiv2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: $grid;
+  grid-template-columns: $repeat-two;
 }
 img#footerImg {
   margin: 10px;
@@ -378,14 +382,14 @@ img.footerLogo {
 /******* Tablet : 960px *******************/
 @media screen and (max-width: $tablet) {
   section.section3 {
-    display: grid;
+    display: $grid;
   }
   img.section3heroimg {
-    display: none;
+    display: $none;
   }
   img.section3heroimgmobile {
     display: block;
-    width: 100%;
+    width: $hundred;
   }
   img.section5HeroImg {
     width: 80%;
@@ -393,20 +397,20 @@ img.footerLogo {
   }
 
   .section5DivTop2 {
-    display: grid;
+    display: $grid;
   }
   img#newsImgcenter {
     margin-left: 92%;
-    width: 100%;
+    width: $hundred;
   }
   .section5Div3 {
-    display: grid;
+    display: $grid;
   }
   .topnav a {
     padding: 14px 15px;
   }
   .topnav a:not(:first-child) {
-    display: none;
+    display: $none;
   }
   .topnav a.icon {
     float: right;
@@ -424,17 +428,17 @@ img.footerLogo {
   }
   .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: $zero;
+    top: $zero;
   }
   .topnav.responsive a {
-    float: none;
+    float: $none;
     display: block;
     text-align: left;
     background-color: $white;
   }
   .image-preview {
-    display: flex;
+    display: $flex;
   }
   img#skillsneeded,
   img#alumini,
@@ -444,8 +448,8 @@ img.footerLogo {
   .skills,
   .section6Div2,
   .section7Div2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-three;
   }
   h1.heading1 {
     font-size: 4vw;
@@ -457,9 +461,9 @@ img.footerLogo {
     display: contents;
   }
   .company-logo {
-    display: grid;
+    display: $grid;
     -ms-grid-columns: (1fr) [];
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: $repeat-two;
   }
 
   h2#heading2 {
@@ -474,14 +478,14 @@ img.footerLogo {
     margin-bottom: 20px;
   }
   .section4Div1 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-two;
   }
   img.circle2 {
-    display: none;
+    display: $none;
   }
   .section2Div1 {
-    display: grid;
+    display: $grid;
   }
   img.imgPreview {
     width: 90%;
@@ -493,8 +497,8 @@ img.footerLogo {
     text-align: center;
   }
   .section6Div1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-one;
   }
   button.check-availabilityopposite {
     font-size: 10px;
@@ -514,41 +518,41 @@ img.footerLogo {
   }
   .skills,
   .section6Div2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-two;
   }
 }
 
 /************** Small-Phone : **********/
 @media screen and (max-width: $small-phone) {
   .footerDiv2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-one;
   }
   div#footerDiv1 {
-    display: grid;
+    display: $grid;
   }
   img.footerLogo {
     width: 40%;
   }
   img.freecouncilingMobile {
     display: block;
-    width: 100%;
+    width: $hundred;
   }
   .section7Div1,
   img.freecounciling {
-    display: none;
+    display: $none;
   }
   img.eligibilityImg {
-    display: none;
+    display: $none;
   }
   img.eligibilityImgMobile {
     display: block;
   }
   .skills,
   .section6Div2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-one;
   }
   a#studentlink {
     margin: auto;
@@ -561,32 +565,32 @@ img.footerLogo {
     margin: auto;
   }
   .section6Div1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-one;
   }
   .section5Div2 {
     width: 90%;
     margin: auto;
   }
   .section5DivTop {
-    display: grid;
+    display: $grid;
   }
   img#section5Img {
     width: 90%;
     margin: auto;
   }
   .section5Div1 {
-    display: grid;
+    display: $grid;
   }
   .company-logo {
-    width: 100%;
+    width: $hundred;
   }
   h2#heading2 {
     font-size: 7vw;
     margin: auto;
   }
   .two {
-    display: grid;
+    display: $grid;
   }
   img.play-vedeo {
     width: 80%;
@@ -596,33 +600,33 @@ img.footerLogo {
   }
   p.access.to.mentor {
     font-size: 3vw;
-    margin: 0;
+    margin: $zero;
   }
   h1.heading1 {
     font-size: 10vw;
   }
   img.image-previewmobile {
     display: block;
-    width: 100%;
+    width: $hundred;
   }
   .section2Div2 {
     margin: auto;
   }
   .section1Div2 {
-    display: none;
+    display: $none;
   }
   section.section1 {
-    display: grid;
+    display: $grid;
   }
   .section3Div2 {
-    display: none;
+    display: $none;
   }
   .section4Div1 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    display: $grid;
+    grid-template-columns: $repeat-one;
   }
   img.logo {
     width: 160px;
-    margin-left: 0;
+    margin-left: $zero;
   }
 }
