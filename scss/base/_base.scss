@@ -3,6 +3,7 @@
   padding: $zero;
   margin: $zero;
   box-sizing: border-box;
+  font-family: $robota;
 }
 img {
   image-rendering: auto;
@@ -69,7 +70,13 @@ button.check-availability {
   border: $zero;
   margin: 20px;
   color: $white;
-  border-radius: 10px;
+  width: 324px;
+  height: 69px;
+  border-radius: 6px;
+}
+img.play-vedeo {
+  width: 30%;
+  height: 30%;
 }
 section.section1 {
   display: $flex;
@@ -80,7 +87,11 @@ section.section1 {
   display: block;
 }
 h1.heading1 {
-  font-size: 70px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 85px;
+  line-height: 110px;
 }
 p.access.to.mentor {
   color: $main-color;
@@ -128,6 +139,25 @@ img.imgPreview {
 .section2Div2 {
   font-size: 15px;
   margin: 170px 30px 0px 0px;
+}
+h1 {
+  font-style: $normal;
+  font-weight: $bold;
+  font-size: $heading;
+  line-height: $line-height;
+  margin: 40px;
+}
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
+p#questionsAnswer {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 32px;
 }
 .two {
   display: $flex;
@@ -226,10 +256,32 @@ img#userImg {
 div#section5Div5 {
   margin: 25px;
 }
-
-p#section5Paragraph {
-  margin: 30px;
+h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130.5%;
 }
+
+p#namePara {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 170%;
+  color: #929c9e;
+}
+p#section5Div5para {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 170%;
+  color: #000000;
+  padding: 10px 30px;
+}
+p#Insidesection5paragraph2 {
+  font-size: 16px;
+  line-height: 32px;
+  color: #575757;
+}
+
 p#insideParagraph {
   color: gray;
 }
@@ -252,6 +304,74 @@ span#headingInsidepara {
 p#discription {
   margin: 20px;
 }
+.webDEv {
+  box-shadow: $card;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+}
+ul.webDev {
+  list-style-type: none;
+}
+li {
+  text-align: left;
+  margin: 30px 160px auto;
+}
+
+.border {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image11 {
+  position: relative;
+  top: 60px;
+  left: 0;
+  border: 1px #5bc3ca solid;
+  height: 107vh;
+  width: 70vh;
+  border-radius: 20px;
+}
+.image12 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 88vh;
+}
+.border1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image13 {
+  position: relative;
+  top: 60px;
+  left: 152px;
+  border: 1px #5bc3ca solid;
+  border-radius: 20px;
+  height: 107vh;
+  width: 75vh;
+}
+
+.image14 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 88vh;
+}
+// section.courses {
+//   display: flex;
+//   justify-content: flex-start;
+//   margin: 50px;
+//   font-size: 16px;
+// }
+section.courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px;
+  font-size: 16px;
+}
+
 /*******************section 6 **************************/
 .section6Div1 {
   display: $flex;
@@ -262,18 +382,31 @@ img#studentportfolio {
   object-fit: revert;
 }
 a#studentlink {
-  margin: 70px;
-  text-decoration: $none;
-  color: black;
-  font-size: 2vw;
-  margin: 35px;
+  margin: 100px;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 32px;
+  color: #575757;
+  text-decoration: none;
 }
 .skills {
-  display: $flex;
-  justify-content: $space-around;
+  box-shadow: $card;
+  width: 100%;
+  margin: 20px;
+  /* background-color: #fafafa; */
+  display: flex;
 }
+.skills1 {
+  margin: 20px;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
 img#skillsneeded {
-  width: 15%;
+  width: 100%;
+}
+p#about {
+  margin: 20px;
 }
 span#color {
   color: $main-color;
@@ -293,28 +426,84 @@ img.eligibilityImg {
 img.freecounciling {
   width: $hundred;
 }
+.alumini {
+  box-shadow: $card;
+  width: 16%;
+}
+h2#aluminiName {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 27px;
+  text-align: center;
+  color: #00abae;
+  margin: 10px;
+}
+p#job {
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  color: #575757;
+}
+img#alumini1 {
+  width: 100%;
+  border: 14px solid #00abae;
+  border-radius: 50%;
+}
+div#AluminiImg {
+  display: flex;
+}
+img#logo {
+  width: 70px;
+  height: 80px;
+  position: relative;
+  right: 25px;
+}
 /***************** Section 7 **************/
 img.freecouncilingMobile {
   display: $none;
 }
-.section7Div1 {
-  font-size: 45%;
-  position: absolute;
-  margin: 6% 20% 10% 50%;
-  color: $white;
+
+p#section7Div1p {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: justify;
+  margin: 10px;
 }
-h1#section7H1 {
-  font-size: 2vw;
-}
+
 p#section7P {
   font-size: 1vw;
+}
+p#highSchool {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 63px;
+  color: #000000;
+  text-align: initial;
+  margin: 100px 0px 0px 0px;
+}
+div#eligibility {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: space-around;
+}
+img#eligibilityImg {
+  width: 35%;
+  display: none;
+}
+img#eligibilityImgDesk {
+  width: 35%;
 }
 button.check-availabilityopposite {
   background-color: $white;
   color: $main-color;
   border: $zero;
+  width: 270px;
+  height: 69px;
   padding: 10px 20px;
   margin-top: 10px;
+  font-size: 16px;
+  margin: 10px;
 }
 .section7Div2 {
   display: $flex;
@@ -337,9 +526,32 @@ p#faqParagraph {
   color: #575757;
 }
 span#question {
-  font-size: $small-heading;
   color: black;
+  font-size: 21px;
+  line-height: 32px;
+  color: black;
+  font-weight: 700;
+}
+p#answer {
+  font-style: normal;
   font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #575757;
+  margin: 60px;
+}
+.freeCounciling {
+  background-color: #00abae;
+  display: flex;
+  justify-content: space-evenly;
+}
+.section7Div1 {
+  margin: 70px;
+  color: white;
+}
+h1#section7H1 {
+  font-size: 39px;
+  margin: 10px;
 }
 /********************** Footer ****************/
 footer {
@@ -379,12 +591,81 @@ img.footerLogo {
   width: 12%;
   margin: 2px 5px 15px;
 }
+/***************** LArge Desktop : 1400px ****************/
+@media screen and (max-width: $desktop-large) {
+  .border {
+    margin: 30px;
+  }
+
+  .border1 {
+    margin-top: 50px;
+  }
+  section.courses {
+    display: grid;
+    margin: auto 16% 10%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*************** Desktop : 1200px **************/
+@media screen and (max-width: $desktop) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .section6Div2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .alumini {
+    width: 100%;
+    padding: 12px;
+  }
+}
 /******* Tablet : 960px *******************/
 @media screen and (max-width: $tablet) {
+  .section6Div2,
+  .skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section.courses {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   section.section3 {
     display: $grid;
   }
-  img.section3heroimg {
+  .freeCounciling {
+    display: $grid;
+    margin: 60px;
+  }
+
+  img.women {
+    width: 90%;
+  }
+  h1#section7H1 {
+    font-size: 35px;
+    line-height: 56px;
+  }
+  p#section7Div1p {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 32px;
+    text-align: justify;
+  }
+  div#eligibility {
+    display: grid;
+    box-shadow: $card;
+    border-radius: 25px;
+    margin: 60px;
+  }
+  img#eligibilityImg {
+    width: 100%;
+    display: block;
+  }
+  img.section3heroimg,
+  img#eligibilityImgDesk {
     display: $none;
   }
   img.section3heroimgmobile {
@@ -472,6 +753,14 @@ img.footerLogo {
 }
 /*********** Large-Phone: 800px *****************/
 @media screen and (max-width: $large-phone) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section6Div2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
   img#section4img {
     width: 80%;
     margin: auto;
@@ -503,13 +792,14 @@ img.footerLogo {
   button.check-availabilityopposite {
     font-size: 10px;
     padding: 5px 5px;
+    height: 42px;
+    width: 220px;
   }
-  .section7Div1 {
-    font-size: 35%;
-  }
+
   img.section5HeroImg {
     margin: auto;
   }
+
   img#skillsneeded,
   img#alumini {
     width: 70%;
@@ -525,6 +815,14 @@ img.footerLogo {
 
 /************** Small-Phone : **********/
 @media screen and (max-width: $small-phone) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .section6Div2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
   .footerDiv2 {
     display: $grid;
     grid-template-columns: $repeat-one;
@@ -539,10 +837,7 @@ img.footerLogo {
     display: block;
     width: $hundred;
   }
-  .section7Div1,
-  img.freecounciling {
-    display: $none;
-  }
+
   img.eligibilityImg {
     display: $none;
   }
@@ -629,4 +924,26 @@ img.footerLogo {
     width: 160px;
     margin-left: $zero;
   }
+}
+/**********changes done *******************/
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px red solid;
+  width: 100%;
+  height: 58vw;
+  z-index: 1;
+}
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border: 1px green solid;
 }
