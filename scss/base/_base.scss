@@ -17,6 +17,9 @@ body {
   font-size: $medium-heading;
   background-color: $white;
 }
+section.main {
+  margin: 10px;
+}
 
 header {
   display: $flex;
@@ -26,10 +29,12 @@ header {
 .topnav {
   overflow: hidden;
   font-style: $normal;
+  margin-top: 2%;
 }
 img.logo {
   width: 200px;
   margin-left: 85px;
+  margin-top: 2%;
 }
 
 .topnav a {
@@ -75,14 +80,20 @@ button.check-availability {
   height: 69px;
   border-radius: 6px;
 }
-img.play-vedeo {
-  width: 30%;
-  height: 30%;
+.playVedeo {
+  display: $flex;
+  margin-top: 20px;
+}
+p#work {
+  margin-top: 14px;
+}
+img.play {
+  width: 50%;
+  margin: auto;
 }
 section.section1 {
   display: $flex;
   justify-content: $space-between;
-  margin: 80px;
 }
 .section1Div2 {
   display: block;
@@ -93,6 +104,7 @@ h1.heading1 {
   font-weight: 900;
   font-size: 85px;
   line-height: 110px;
+  text-align: center;
 }
 p.access.to.mentor {
   color: $main-color;
@@ -106,7 +118,8 @@ img.client-logo {
 .company-logo {
   display: $grid;
   grid-template-columns: $repeat-three;
-  width: 50%;
+  width: 80%;
+  margin: auto;
 }
 button.button1 {
   border: 1px solid #e7e7e7;
@@ -146,7 +159,8 @@ h1 {
   font-weight: $bold;
   font-size: $heading;
   line-height: $line-height;
-  margin: 40px;
+  text-align: center;
+  margin: 30px 0 50px;
 }
 p {
   font-style: normal;
@@ -173,11 +187,10 @@ img.circle2 {
 section.section3 {
   display: $flex;
   justify-content: $space-between;
-  margin: 35px;
 }
 .section3Div1 {
   font-size: $small-heading;
-  margin: 40px;
+  // margin: 40px;
 }
 img.section3heroimg {
   width: 90%;
@@ -190,7 +203,7 @@ img.section3heroimgmobile {
   display: $flex;
   justify-content: $space-between;
   padding: 10px;
-  margin: 10px;
+  // margin: 10px;
 }
 img#plus {
   object-fit: contain;
@@ -206,10 +219,6 @@ section.section4 {
   padding: 25px;
 }
 
-.section4Div1 {
-  display: $flex;
-  justify-content: $space-around;
-}
 img#section4img {
   width: 30%;
 }
@@ -220,6 +229,31 @@ span#companyName {
   color: $main-color;
   font-weight: bold;
 }
+.section4Div1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+img.customercareImg {
+  width: 100%;
+}
+.supportDiv {
+  width: 85%;
+  margin-top: 1%;
+  position: relative;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgb(0, 171, 174);
+  border-image: initial;
+  border-radius: 25px;
+  margin: 20px;
+}
+.supportDiv1 {
+  width: 100%;
+  position: relative;
+  bottom: 5%;
+  left: 5%;
+}
+
 /****************** section 5 ******************/
 .section5DivTop {
   display: $flex;
@@ -249,19 +283,20 @@ div#section5Div3 {
 }
 .section5Div3 {
   display: $flex;
-  margin: 30px;
+  // margin: 30px;
 }
 img#userImg {
   width: $hundred;
 }
 div#section5Div5 {
-  margin: 25px;
+  // margin: 25px;
 }
 h3 {
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
   line-height: 130.5%;
+  margin: 25px;
 }
 
 p#namePara {
@@ -269,6 +304,7 @@ p#namePara {
   font-size: 22px;
   line-height: 170%;
   color: #929c9e;
+  margin: 25px;
 }
 p#section5Div5para {
   font-weight: 400;
@@ -281,6 +317,7 @@ p#Insidesection5paragraph2 {
   font-size: 16px;
   line-height: 32px;
   color: #575757;
+  text-align: center;
 }
 
 p#insideParagraph {
@@ -289,25 +326,25 @@ p#insideParagraph {
 .section5DivTop2 {
   display: $flex;
   justify-content: $space-around;
-  margin: 50px;
+  // margin: 50px;
 }
 img.section5HeroImg {
   width: 50%;
 }
 .section5paragraph2 {
   font-size: 15px;
-  margin: 30px;
+  // margin: 30px;
 }
 span#headingInsidepara {
   font-size: $small-heading;
   font-weight: 500;
 }
 p#discription {
-  margin: 20px;
+  // margin: 20px;
 }
 .webDEv {
   box-shadow: $card;
-  background-color: #351515;
+  background-color: #f9f9f9;
   border-radius: 20px;
 }
 ul.webDev {
@@ -318,55 +355,6 @@ li {
   margin: 30px 115px;
 }
 
-.border {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-.image11 {
-  position: relative;
-  top: 60px;
-  left: 0;
-  border: 1px #5bc3ca solid;
-  height: 830px;
-  width: 90vh;
-  border-radius: 20px;
-}
-// .image12 {
-//   position: absolute;
-//   top: 30px;
-//   left: 30px;
-//   width: 105vh;
-// }
-.border1 {
-  position: relative;
-  top: 0;
-  left: 0;
-}
-
-.image13 {
-  position: relative;
-  top: 60px;
-  left: 140px;
-  border: 1px #5bc3ca solid;
-  border-radius: 20px;
-  height: 830px;
-  width: 90vh;
-}
-
-.image14 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  width: 105vh;
-}
-// section.courses {
-//   display: flex;
-//   justify-content: flex-start;
-//   margin: 50px;
-//   font-size: 16px;
-// }
-
 button.learnMore {
   padding: 10px 20px;
   background-color: #00abae;
@@ -374,6 +362,48 @@ button.learnMore {
   margin: 8px 0px 30px;
   color: white;
 }
+
+.web {
+  width: 75%;
+  /* background-color: black; */
+  border: 5px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 25px;
+}
+.web1 {
+  width: 75%;
+  /* background-color: black; */
+  border: 5px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  margin-left: 25%;
+  border-radius: 25px;
+}
+.image12 {
+  width: 100%;
+  margin-left: 15%;
+  /* margin-bottom: 7%; */
+  position: relative;
+  bottom: 4%;
+}
+.image121 {
+  width: 100%;
+  right: 15%;
+  /* margin-bottom: 7%; */
+  position: relative;
+  bottom: 4%;
+  margin-right: 15%;
+  float: right;
+}
+section.courses {
+  display: grid;
+  font-size: 16px;
+  width: 90%;
+  // margin: 5%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /*******************section 6 **************************/
 .section6Div1 {
   display: $flex;
@@ -384,7 +414,7 @@ img#studentportfolio {
   object-fit: revert;
 }
 a#studentlink {
-  margin: 100px;
+  // margin: 100px;
   font-weight: 500;
   font-size: 19px;
   line-height: 32px;
@@ -394,12 +424,11 @@ a#studentlink {
 .skills {
   box-shadow: $card;
   width: 100%;
-  margin: 20px;
   /* background-color: #fafafa; */
   display: flex;
 }
 .skills1 {
-  margin: 20px;
+  // margin: 20px;
   background-color: #fafafa;
   padding: 20px;
 }
@@ -408,7 +437,7 @@ img#skillsneeded {
   width: 100%;
 }
 p#about {
-  margin: 20px;
+  // margin: 20px;
 }
 span#color {
   color: $main-color;
@@ -416,6 +445,7 @@ span#color {
 .section6Div2 {
   display: $flex;
   justify-content: $space-around;
+  width: 100%;
 }
 img#alumini {
   width: 18%;
@@ -430,7 +460,7 @@ img.freecounciling {
 }
 .alumini {
   box-shadow: $card;
-  width: 16%;
+  width: 10%;
 }
 h2#aluminiName {
   font-weight: 700;
@@ -438,7 +468,7 @@ h2#aluminiName {
   line-height: 27px;
   text-align: center;
   color: #00abae;
-  margin: 10px;
+  // margin: 10px;
 }
 p#job {
   font-size: 13px;
@@ -470,7 +500,7 @@ p#section7Div1p {
   font-size: 21px;
   line-height: 32px;
   text-align: justify;
-  margin: 10px;
+  // margin: 10px;
 }
 
 p#section7P {
@@ -505,7 +535,7 @@ button.check-availabilityopposite {
   padding: 10px 20px;
   margin-top: 10px;
   font-size: 16px;
-  margin: 10px;
+  // margin: 10px;
 }
 .section7Div2 {
   display: $flex;
@@ -540,7 +570,7 @@ p#answer {
   font-size: 18px;
   line-height: 32px;
   color: #575757;
-  margin: 60px;
+  // margin: 60px;
 }
 .freeCounciling {
   background-color: #00abae;
@@ -548,12 +578,12 @@ p#answer {
   justify-content: space-evenly;
 }
 .section7Div1 {
-  margin: 70px;
+  // margin: 70px;
   color: white;
 }
 h1#section7H1 {
   font-size: 39px;
-  margin: 10px;
+  // margin: 10px;
 }
 /********************** Footer ****************/
 footer {
@@ -585,7 +615,7 @@ a#footerLink {
   grid-template-columns: $repeat-two;
 }
 img#footerImg {
-  margin: 10px;
+  // margin: 10px;
   width: 50px;
 }
 
@@ -596,41 +626,69 @@ img.footerLogo {
 /***************** LArge Desktop : 1400px ****************/
 @media screen and (max-width: $desktop-large) {
   .border {
-    margin: 30px;
-  }
-
-  .border1 {
-    margin-top: 50px;
-  }
-  // section.courses {
-  //   display: grid;
-  //   margin: auto 16% 10%;
-  //   grid-template-columns: repeat(1, 1fr);
-  // }
-}
-
-/*************** Desktop : 1200px **************/
-@media screen and (max-width: $desktop) {
-  .skills {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    // margin: 30px;
   }
   .section6Div2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
   .alumini {
-    width: 100%;
-    padding: 12px;
+    box-shadow: 0 4px 8px 0 0 0 0/20%;
+    width: 75%;
+  }
+
+  .border1 {
+    margin-top: 50px;
+  }
+}
+
+/*************** Desktop : 1200px **************/
+@media screen and (max-width: $desktop) {
+  .alumini {
+    box-shadow: $card;
+    width: 75%;
+  }
+  .section2Div1 {
+    display: $grid;
+  }
+  img.imgPreview {
+    width: 90%;
+    margin: auto;
+  }
+  .section4Div1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.courses {
+    display: grid;
+    font-size: 16px;
+    width: 90%;
+    margin: 5%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .web {
+    margin: 8%;
+  }
+  .web1 {
+    margin: 18.5%;
+  }
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 /******* Tablet : 960px *******************/
 @media screen and (max-width: $tablet) {
+  .section4Div1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .section6Div2,
   .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 95%;
+    width: 100%;
   }
   // section.courses {
   //   display: grid;
@@ -641,7 +699,7 @@ img.footerLogo {
   }
   .freeCounciling {
     display: $grid;
-    margin: 60px;
+    // margin: 60px;
   }
 
   img.women {
@@ -661,7 +719,7 @@ img.footerLogo {
     display: grid;
     box-shadow: $card;
     border-radius: 25px;
-    margin: 60px;
+    // margin: 60px;
   }
   img#eligibilityImg {
     width: 100%;
@@ -735,9 +793,7 @@ img.footerLogo {
     display: $grid;
     grid-template-columns: $repeat-three;
   }
-  h1.heading1 {
-    font-size: 4vw;
-  }
+
   p.access.to.mentor {
     font-size: 2vw;
   }
@@ -756,6 +812,27 @@ img.footerLogo {
 }
 /*********** Large-Phone: 800px *****************/
 @media screen and (max-width: $large-phone) {
+  h1.heading1 {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 53px;
+  }
+  .playVedeo {
+    display: grid;
+  }
+  img.image-preview {
+    display: none;
+  }
+
+  section.section1,
+  .two {
+    display: -ms-grid;
+    display: grid;
+  }
+  img.image-previewmobile {
+    display: block;
+    width: 100%;
+  }
   .skills {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -769,20 +846,11 @@ img.footerLogo {
     margin: auto;
     margin-bottom: 20px;
   }
-  .section4Div1 {
-    display: $grid;
-    grid-template-columns: $repeat-two;
-  }
+
   img.circle2 {
     display: $none;
   }
-  .section2Div1 {
-    display: $grid;
-  }
-  img.imgPreview {
-    width: 90%;
-    margin: auto;
-  }
+
   .section2Div2 {
     font-size: 15px;
     margin: 60px 30px 0px 0px;
@@ -818,6 +886,13 @@ img.footerLogo {
 
 /************** Small-Phone : **********/
 @media screen and (max-width: $small-phone) {
+  .alumini {
+    box-shadow: $card;
+    width: 100%;
+  }
+  li {
+    margin: 35px 70px;
+  }
   .skills {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -894,19 +969,16 @@ img.footerLogo {
     width: 80%;
   }
   button.check-availability {
-    padding: 25px 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
   }
   p.access.to.mentor {
-    font-size: 3vw;
-    margin: $zero;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 22px;
   }
-  h1.heading1 {
-    font-size: 10vw;
-  }
-  img.image-previewmobile {
-    display: block;
-    width: $hundred;
-  }
+
   .section2Div2 {
     margin: auto;
   }
@@ -926,56 +998,5 @@ img.footerLogo {
   img.logo {
     width: 160px;
     margin-left: $zero;
-  }
-}
-/**********changes done *******************/
-
-.web {
-  width: 75%;
-  /* background-color: black; */
-  border: 5px solid blue;
-  margin-top: 1%;
-  position: relative;
-  margin: 8%;
-}
-.web1 {
-  width: 75%;
-  /* background-color: black; */
-  border: 5px solid blue;
-  margin-top: 1%;
-  position: relative;
-  margin-left: 25%;
-  margin: 18.5%;
-}
-.image12 {
-  width: 100%;
-  margin-left: 15%;
-  /* margin-bottom: 7%; */
-  position: relative;
-  bottom: 4%;
-}
-.image121 {
-  width: 100%;
-  right: 15%;
-  /* margin-bottom: 7%; */
-  position: relative;
-  bottom: 4%;
-  margin-right: 15%;
-  float: right;
-}
-section.courses {
-  display: grid;
-  font-size: 16px;
-  width: 90%;
-  margin: 5%;
-  grid-template-columns: repeat(2, 1fr);
-}
-@media screen and (max-width: 950px) {
-  section.courses {
-    display: grid;
-    font-size: 16px;
-    width: 90%;
-    margin: 5%;
-    grid-template-columns: repeat(1, 1fr);
   }
 }
