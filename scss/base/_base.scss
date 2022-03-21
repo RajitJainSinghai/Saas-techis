@@ -68,6 +68,7 @@ img.image-previewmobile {
 }
 .button {
   display: $flex;
+  margin-top: 10%;
 }
 
 button.check-availability {
@@ -79,17 +80,52 @@ button.check-availability {
   width: 324px;
   height: 69px;
   border-radius: 6px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+
+  line-height: 21px;
 }
-.playVedeo {
-  display: $flex;
-  margin-top: 20px;
+.playvedeo {
+  display: flex;
 }
-p#work {
-  margin-top: 14px;
+
+p#playP {
+  margin: 50px 18px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration-line: underline;
+  color: #575757;
 }
 img.play {
-  width: 50%;
+  width: 66px;
+  height: 66px;
   margin: auto;
+  // border: 2px solid #00abae;
+  box-sizing: border-box;
+  // border-radius: 79px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  padding: 15px;
+}
+div#playVedeoDiv {
+  border: 3px solid #00abae;
+  border-radius: 50%;
+  padding: 8px 2px 5px 11px;
+  height: 95%;
+}
+h1.firstHeading {
+  margin-top: 150px;
+}
+.internalDiv {
+  border: 3px solid rgba(0, 171, 174, 0.3);
+  border-radius: 50%;
+  padding: 14px;
+  height: 100%;
+  width: 44%;
 }
 section.section1 {
   display: $flex;
@@ -104,32 +140,47 @@ h1.heading1 {
   font-weight: 900;
   font-size: 85px;
   line-height: 110px;
-  text-align: center;
+  text-align: start;
+  margin: 0 0 0 25px;
 }
 p.access.to.mentor {
   color: $main-color;
-  margin: 15px;
+  text-align: start;
+  margin: 0 0 0 25px;
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 31px;
+  line-height: 42px;
 }
 
 img.client-logo {
   width: 45%;
 }
-
-.company-logo {
-  display: $grid;
-  grid-template-columns: $repeat-three;
-  width: 80%;
-  margin: auto;
+img.company-img {
+  width: 100px;
+}
+img.company-img-star {
+  width: 70%;
+}
+.company-logo2 {
+  justify-content: center;
+}
+.company-logo1,
+.company-logo2,
+.company-logo3 {
+  display: flex;
 }
 button.button1 {
-  border: 1px solid #e7e7e7;
+  border: 0;
   background-color: $white;
   border-radius: 10px;
   margin: 8px;
-}
-img.company-img {
-  margin: 10px 4px 0px;
-  width: 50%;
+  padding: 15px 60px 0 45px;
+  box-shadow: $card;
+  width: 210px;
+  height: 87px;
+  border-radius: 6px;
 }
 
 /*******************Section 2 ********************/
@@ -140,19 +191,42 @@ section.section2 {
   width: $hundred;
   background-color: #f1f1f1;
   border-radius: 59px 120px 0px 5px;
-  margin-top: 40px;
+  margin: 4% 0 10% 0;
 }
 .section2Div1 {
   display: $flex;
   justify-content: $space-around;
 }
-img.imgPreview {
+.imgPreviewImage {
   width: 40%;
+  /* background-color: black; */
+  border: 2px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 25px;
+  border-radius: 15px;
+  border-bottom-left-radius: 127px;
 }
 
+img.imgPreview {
+  width: 100%;
+  margin-left: 5%;
+  /* margin-bottom: 7%; */
+  position: relative;
+  bottom: 4%;
+  border-radius: 15px;
+  border-bottom-left-radius: 127px;
+}
+img.circleElement {
+  margin: 20px 0 50px 0;
+  position: relative;
+  top: 80px;
+  left: 146px;
+  width: 15%;
+}
 .section2Div2 {
   font-size: 15px;
-  margin: 170px 30px 0px 0px;
+  // margin: 170px 30px 0px 0px;
 }
 h1 {
   font-style: $normal;
@@ -190,6 +264,8 @@ section.section3 {
 }
 .section3Div1 {
   font-size: $small-heading;
+  text-align: center;
+
   // margin: 40px;
 }
 img.section3heroimg {
@@ -198,15 +274,15 @@ img.section3heroimg {
 img.section3heroimgmobile {
   display: $none;
 }
-.questions {
-  border: 1px solid black;
-  display: $flex;
-  justify-content: $space-between;
-  padding: 10px;
-  // margin: 10px;
-}
-img#plus {
-  object-fit: contain;
+button#questionsAnswer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 18px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 /***********section4 *****************/
@@ -225,9 +301,20 @@ img#section4img {
 p#section4P {
   padding: 35px;
 }
+.company-Logo {
+  width: 44%;
+}
 span#companyName {
   color: $main-color;
   font-weight: bold;
+}
+h2#heading24\/7 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 56px;
+  color: #00abae;
 }
 .section4Div1 {
   display: grid;
@@ -240,7 +327,7 @@ img.customercareImg {
   width: 85%;
   margin-top: 1%;
   position: relative;
-  border-width: 5px;
+  border-width: 2px;
   border-style: solid;
   border-color: rgb(0, 171, 174);
   border-image: initial;
@@ -252,6 +339,12 @@ img.customercareImg {
   position: relative;
   bottom: 5%;
   left: 5%;
+}
+.webDEv24\/7 {
+  box-shadow: $card;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 /****************** section 5 ******************/
@@ -271,11 +364,15 @@ h1#section5H1 {
   font-size: 30px;
 }
 .section5Div2 {
-  box-shadow: $card;
   transition: 0.3s;
   width: 44%;
-  font-size: $small-heading;
-  border: 1px solid #c7c7c7;
+  width: 44%;
+  font-size: 18px;
+  /* border: 1px solid #c7c7c7; */
+  border-radius: 20px;
+  padding: 40px;
+  background: #ffffff;
+  box-shadow: $card;
   border-radius: 20px;
 }
 div#section5Div3 {
@@ -288,9 +385,7 @@ div#section5Div3 {
 img#userImg {
   width: $hundred;
 }
-div#section5Div5 {
-  // margin: 25px;
-}
+
 h3 {
   font-style: normal;
   font-weight: 700;
@@ -317,11 +412,14 @@ p#Insidesection5paragraph2 {
   font-size: 16px;
   line-height: 32px;
   color: #575757;
-  text-align: center;
+  text-align: left;
+  margin-left: 30px;
 }
 
 p#insideParagraph {
   color: gray;
+  text-align: left;
+  margin-left: 30px;
 }
 .section5DivTop2 {
   display: $flex;
@@ -336,19 +434,25 @@ img.section5HeroImg {
   // margin: 30px;
 }
 span#headingInsidepara {
-  font-size: $small-heading;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
+  font-size: 19px;
+  line-height: 32px;
+  color: #575757;
 }
-p#discription {
-  // margin: 20px;
-}
+
 .webDEv {
   box-shadow: $card;
   background-color: #f9f9f9;
   border-radius: 20px;
+  padding: 20px;
 }
 ul.webDev {
-  list-style-type: none;
+  color: #929c9e;
+}
+p#webHeading {
+  color: #929c9e;
 }
 li {
   text-align: left;
@@ -356,7 +460,8 @@ li {
 }
 
 button.learnMore {
-  padding: 10px 20px;
+  width: 235px;
+  height: 69px;
   background-color: #00abae;
   border: 0;
   margin: 8px 0px 30px;
@@ -366,7 +471,7 @@ button.learnMore {
 .web {
   width: 75%;
   /* background-color: black; */
-  border: 5px solid #00abae;
+  border: 2px solid #00abae;
   margin-top: 1%;
   position: relative;
   border-radius: 25px;
@@ -374,7 +479,7 @@ button.learnMore {
 .web1 {
   width: 75%;
   /* background-color: black; */
-  border: 5px solid #00abae;
+  border: 2px solid #00abae;
   margin-top: 1%;
   position: relative;
   margin-left: 25%;
@@ -402,13 +507,14 @@ section.courses {
   width: 90%;
   // margin: 5%;
   grid-template-columns: repeat(2, 1fr);
+  margin: auto;
 }
 
 /*******************section 6 **************************/
-.section6Div1 {
-  display: $flex;
-  justify-content: $space-around;
+.section6Div {
+  display: flex;
 }
+
 img#studentportfolio {
   width: $hundred;
   object-fit: revert;
@@ -422,22 +528,24 @@ a#studentlink {
   text-decoration: none;
 }
 .skills {
-  box-shadow: $card;
-  width: 100%;
-  /* background-color: #fafafa; */
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .skills1 {
-  // margin: 20px;
   background-color: #fafafa;
   padding: 20px;
+  background: #fafafa;
+  box-shadow: $card;
+  border-radius: 12px;
+  /* width: 20%; */
+  margin: 30px;
 }
 
 img#skillsneeded {
   width: 100%;
 }
-p#about {
-  // margin: 20px;
+p#Name {
+  color: #00abae;
 }
 span#color {
   color: $main-color;
@@ -459,8 +567,7 @@ img.freecounciling {
   width: $hundred;
 }
 .alumini {
-  box-shadow: $card;
-  width: 10%;
+  width: 14%;
 }
 h2#aluminiName {
   font-weight: 700;
@@ -471,7 +578,7 @@ h2#aluminiName {
   // margin: 10px;
 }
 p#job {
-  font-size: 13px;
+  font-size: 18px;
   line-height: 27px;
   text-align: center;
   color: #575757;
@@ -488,36 +595,45 @@ img#logo {
   width: 70px;
   height: 80px;
   position: relative;
-  right: 25px;
+  bottom: 30px;
+  left: -35px;
 }
 /***************** Section 7 **************/
 img.freecouncilingMobile {
   display: $none;
 }
-
+img.women {
+  width: 50%;
+}
 p#section7Div1p {
   font-weight: 500;
   font-size: 21px;
   line-height: 32px;
   text-align: justify;
-  // margin: 10px;
+  margin: 0 25%;
 }
 
 p#section7P {
   font-size: 1vw;
 }
 p#highSchool {
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 63px;
   color: #000000;
   text-align: initial;
   margin: 100px 0px 0px 0px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 63px;
 }
 div#eligibility {
   background-color: #f4f4f4;
   display: flex;
   justify-content: space-around;
+  background: #f4f4f4;
+  box-shadow: $card;
+  border-radius: 25px;
+  margin: 50px;
 }
 img#eligibilityImg {
   width: 35%;
@@ -528,14 +644,21 @@ img#eligibilityImgDesk {
 }
 button.check-availabilityopposite {
   background-color: $white;
-  color: $main-color;
+  color: #00abae;
+
   border: $zero;
-  width: 270px;
-  height: 69px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 21px;
   padding: 10px 20px;
-  margin-top: 10px;
-  font-size: 16px;
-  // margin: 10px;
+  margin: 5% 25%;
+  width: 324px;
+  height: 69px;
+
+  background: #ffffff;
+  border-radius: 6px;
 }
 .section7Div2 {
   display: $flex;
@@ -570,7 +693,7 @@ p#answer {
   font-size: 18px;
   line-height: 32px;
   color: #575757;
-  // margin: 60px;
+  margin: 0 12%;
 }
 .freeCounciling {
   background-color: #00abae;
@@ -609,6 +732,7 @@ a#footerLink {
   text-decoration: $none;
   margin: 5px 10px 5px;
   font-size: $small-heading;
+  line-height: 50px;
 }
 .footerDiv2 {
   display: $grid;
@@ -617,23 +741,33 @@ a#footerLink {
 img#footerImg {
   // margin: 10px;
   width: 50px;
+  background: white;
+  border-radius: 40px;
+  margin: 10px;
 }
-
+.companyLogoMobile {
+  display: none;
+}
 img.footerLogo {
   width: 12%;
   margin: 2px 5px 15px;
 }
 /***************** LArge Desktop : 1400px ****************/
 @media screen and (max-width: $desktop-large) {
-  .border {
-    // margin: 30px;
+  .section2Div1 {
+    text-align: center;
+    display: grid;
+    margin: auto;
   }
+  .imgPreviewImage {
+    width: 90%;
+  }
+
   .section6Div2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
   .alumini {
-    box-shadow: 0 4px 8px 0 0 0 0/20%;
     width: 75%;
   }
 
@@ -644,16 +778,63 @@ img.footerLogo {
 
 /*************** Desktop : 1200px **************/
 @media screen and (max-width: $desktop) {
+  .webDEv24\/7 {
+    height: auto;
+  }
+  h1.firstHeading {
+    margin-top: 15px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .section6Div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  p.access.to.mentor {
+    text-align: center;
+  }
+  .playvedeo {
+    display: flex;
+    justify-content: center;
+  }
+  img.image-previewmobile {
+    display: block;
+    width: 100%;
+  }
+  img.image-preview {
+    width: 100%;
+    display: none;
+  }
+  .internalDiv {
+    width: 116px;
+  }
+  section.section1 {
+    display: grid;
+    justify-content: center;
+  }
+  div#playVedeoDiv {
+    height: 100%;
+    width: 37%;
+    padding: 6px 66px 0px 13px;
+  }
+  .button {
+    display: grid;
+    justify-content: center;
+  }
   .alumini {
-    box-shadow: $card;
     width: 75%;
+    margin: 20% 0 0 0;
   }
   .section2Div1 {
     display: $grid;
   }
   img.imgPreview {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    position: relative;
+    left: 4%;
+    bottom: 4%;
   }
   .section4Div1 {
     display: grid;
@@ -670,7 +851,7 @@ img.footerLogo {
     margin: 8%;
   }
   .web1 {
-    margin: 18.5%;
+    margin: 16.5%;
   }
   .skills {
     display: grid;
@@ -679,6 +860,21 @@ img.footerLogo {
 }
 /******* Tablet : 960px *******************/
 @media screen and (max-width: $tablet) {
+  .company-Logo {
+    display: none;
+  }
+  .companyLogoMobile {
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 0 20px;
+  }
+  .section6Div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 60%;
+  }
   .section4Div1 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -696,12 +892,22 @@ img.footerLogo {
   // }
   section.section3 {
     display: $grid;
+    justify-content: center;
   }
   .freeCounciling {
     display: $grid;
     // margin: 60px;
   }
-
+  p#highSchool {
+    color: #000000;
+    text-align: initial;
+    margin: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 45px;
+  }
   img.women {
     width: 90%;
   }
@@ -714,6 +920,7 @@ img.footerLogo {
     font-size: 21px;
     line-height: 32px;
     text-align: justify;
+    margin: 20px;
   }
   div#eligibility {
     display: grid;
@@ -759,7 +966,10 @@ img.footerLogo {
     display: block;
     object-fit: contain;
     border-radius: 25px;
-    border: 1px solid;
+    border: 2px solid #0000004d;
+    padding: 16px 20px;
+    border-radius: 50%;
+    height: 57px;
   }
 
   header {
@@ -772,6 +982,7 @@ img.footerLogo {
     position: absolute;
     right: $zero;
     top: $zero;
+    border: 0;
   }
   .topnav.responsive a {
     float: $none;
@@ -795,7 +1006,8 @@ img.footerLogo {
   }
 
   p.access.to.mentor {
-    font-size: 2vw;
+    font-size: 4vw;
+    margin: 0;
   }
   .button {
     display: contents;
@@ -817,6 +1029,7 @@ img.footerLogo {
     font-size: 45px;
     line-height: 53px;
   }
+
   .playVedeo {
     display: grid;
   }
@@ -864,7 +1077,8 @@ img.footerLogo {
     font-size: 10px;
     padding: 5px 5px;
     height: 42px;
-    width: 220px;
+    width: 184px;
+    font-size: 12px;
   }
 
   img.section5HeroImg {
@@ -886,9 +1100,13 @@ img.footerLogo {
 
 /************** Small-Phone : **********/
 @media screen and (max-width: $small-phone) {
+  button.button1 {
+    width: 173px;
+    height: 65px;
+  }
   .alumini {
-    box-shadow: $card;
     width: 100%;
+    margin-top: 20%;
   }
   li {
     margin: 35px 70px;
@@ -972,6 +1190,8 @@ img.footerLogo {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
+    margin: 5% auto;
+    display: block;
   }
   p.access.to.mentor {
     font-weight: 800;
