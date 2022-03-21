@@ -17,9 +17,6 @@ body {
   font-size: $medium-heading;
   background-color: $white;
 }
-section.main {
-  margin: 10px;
-}
 
 header {
   display: $flex;
@@ -130,6 +127,7 @@ h1.firstHeading {
 section.section1 {
   display: $flex;
   justify-content: $space-between;
+  width: 90%;
 }
 .section1Div2 {
   display: block;
@@ -186,9 +184,8 @@ button.button1 {
 /*******************Section 2 ********************/
 
 section.section2 {
-  box-shadow: $card;
   transition: 0.3s;
-  width: $hundred;
+  width: 95%;
   background-color: #f1f1f1;
   border-radius: 59px 120px 0px 5px;
   margin: 4% 0 10% 0;
@@ -210,19 +207,26 @@ section.section2 {
 
 img.imgPreview {
   width: 100%;
-  margin-left: 5%;
-  /* margin-bottom: 7%; */
   position: relative;
   bottom: 4%;
   border-radius: 15px;
+}
+.previewImg {
+  padding: 35px;
+  background: white;
+  border-radius: 25px;
   border-bottom-left-radius: 127px;
+  position: relative;
+  bottom: 5%;
+  left: 4%;
 }
 img.circleElement {
   margin: 20px 0 50px 0;
   position: relative;
-  top: 80px;
-  left: 146px;
-  width: 15%;
+  top: 65px;
+  left: 0;
+  width: 110px;
+  margin-right: 13%;
 }
 .section2Div2 {
   font-size: 15px;
@@ -234,7 +238,7 @@ h1 {
   font-size: $heading;
   line-height: $line-height;
   text-align: center;
-  margin: 30px 0 50px;
+  margin: 40px 0 50px;
 }
 p {
   font-style: normal;
@@ -251,6 +255,7 @@ p#questionsAnswer {
 .two {
   display: $flex;
   justify-content: $space-around;
+  margin-top: 5%;
 }
 img.circle2 {
   position: relative;
@@ -261,15 +266,15 @@ img.circle2 {
 section.section3 {
   display: $flex;
   justify-content: $space-between;
+  margin-left: 60px;
+  width: 90%;
 }
 .section3Div1 {
   font-size: $small-heading;
-  text-align: center;
-
-  // margin: 40px;
+  width: 40%;
 }
 img.section3heroimg {
-  width: 90%;
+  width: 80%;
 }
 img.section3heroimgmobile {
   display: $none;
@@ -287,7 +292,6 @@ button#questionsAnswer {
 
 /***********section4 *****************/
 section.section4 {
-  box-shadow: $card;
   transition: 0.3s;
   width: $hundred;
   background-color: #f1f1f1;
@@ -302,7 +306,7 @@ p#section4P {
   padding: 35px;
 }
 .company-Logo {
-  width: 44%;
+  width: 670px;
 }
 span#companyName {
   color: $main-color;
@@ -363,6 +367,10 @@ h1#section5H1 {
   padding: 40px;
   font-size: 30px;
 }
+h1#para11 {
+  text-align: left;
+  margin-left: 25px;
+}
 .section5Div2 {
   transition: 0.3s;
   width: 44%;
@@ -383,7 +391,8 @@ div#section5Div3 {
   // margin: 30px;
 }
 img#userImg {
-  width: $hundred;
+  width: 303px;
+  height: 303px;
 }
 
 h3 {
@@ -423,11 +432,12 @@ p#insideParagraph {
 }
 .section5DivTop2 {
   display: $flex;
-  justify-content: $space-around;
-  // margin: 50px;
+  justify-content: $space-evenly;
+  width: 90%;
+  margin: 5%;
 }
 img.section5HeroImg {
-  width: 50%;
+  width: 40%;
 }
 .section5paragraph2 {
   font-size: 15px;
@@ -529,7 +539,7 @@ a#studentlink {
 }
 .skills {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 .skills1 {
   background-color: #fafafa;
@@ -537,8 +547,7 @@ a#studentlink {
   background: #fafafa;
   box-shadow: $card;
   border-radius: 12px;
-  /* width: 20%; */
-  margin: 30px;
+  width: 95%;
 }
 
 img#skillsneeded {
@@ -710,13 +719,13 @@ h1#section7H1 {
 }
 /********************** Footer ****************/
 footer {
-  background-color: black;
+  background-color: #303030;
   color: $white;
 }
 
 .footer {
   font-size: 12px;
-  background-color: black;
+  background-color: #303030;
   margin: 0 30px;
 }
 div#footerDiv1 {
@@ -751,6 +760,17 @@ img#footerImg {
 img.footerLogo {
   width: 12%;
   margin: 2px 5px 15px;
+}
+p#footerLast {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  width: 277px;
+  height: 19px;
+  padding: 2% 0 3% 0;
 }
 /***************** LArge Desktop : 1400px ****************/
 @media screen and (max-width: $desktop-large) {
