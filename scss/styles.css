@@ -1414,11 +1414,11 @@ p#footerLast {
 /************** Small-Phone : **********/
 @media screen and (max-width: 600px) {
   header {
-    margin: 20px 0;
+    margin: 20px 0 50px;
   }
   button.button1 {
-    width: 173px;
-    height: 65px;
+    width: 180px;
+    height: 80px;
   }
   .alumini {
     width: 100%;
@@ -1590,7 +1590,7 @@ p#footerLast {
   }
   img.logo {
     width: 160px;
-    margin-left: 0;
+    margin-left: 15px;
   }
   img.women {
     width: 400px;
