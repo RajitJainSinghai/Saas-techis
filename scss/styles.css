@@ -793,8 +793,8 @@ img#logo {
   width: 70px;
   height: 80px;
   position: relative;
-  bottom: 30px;
-  left: -35px;
+  bottom: 45px;
+  left: -70px;
 }
 
 /***************** Section 7 **************/
@@ -1008,6 +1008,29 @@ p#footerLast {
 
 /***************** LArge Desktop : 1400px ****************/
 @media screen and (max-width: 1400px) {
+  h1#Heading1200 {
+    font-size: 39px;
+    margin: 0;
+  }
+  button.check-availability {
+    padding: 15px 25px;
+    background-color: #00abae;
+    border: 0;
+    margin: 10px 0 10px 0;
+  }
+  button#questionsAnswer {
+    width: 100%;
+    padding: 10px;
+  }
+  div#playVedeoDiv {
+    border: 3px solid #00abae;
+    border-radius: 50%;
+    padding: 3px 18px 5px 11px;
+    height: 100%;
+  }
+  .section1Div1 {
+    margin-top: 0px;
+  }
   .section2Div1 {
     text-align: center;
     display: -ms-grid;
@@ -1442,6 +1465,7 @@ p#footerLast {
     display: grid;
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
+    padding: 0;
   }
   a#studentlink {
     margin: auto;
@@ -1449,9 +1473,13 @@ p#footerLast {
     text-align: center;
   }
   img#studentportfolio {
-    width: 70%;
+    width: 100%;
     display: block;
     margin: auto;
+  }
+  .skills1 {
+    width: 75%;
+    margin: 0 auto 20px;
   }
   .section6Div1 {
     display: -ms-grid;
@@ -1462,6 +1490,7 @@ p#footerLast {
   .section5Div2 {
     width: 90%;
     margin: auto;
+    margin-top: 20px;
   }
   .section5DivTop {
     display: -ms-grid;
@@ -1477,6 +1506,32 @@ p#footerLast {
   }
   .company-logo {
     width: 100%;
+  }
+  .section5paragraph2 {
+    width: 100%;
+  }
+  .studyBorder {
+    border-bottom-right-radius: 63px;
+    width: 100%;
+  }
+  img.section5HeroImg {
+    width: 100%;
+  }
+  .section5DivTop2 {
+    display: -ms-grid;
+    display: grid;
+    margin: 15px;
+  }
+  .section6Div {
+    width: 100%;
+    padding: 0;
+  }
+  p#Insidesection5paragraph2 {
+    margin-left: 0px;
+  }
+  h1#para11 {
+    text-align: left;
+    margin-left: 0px;
   }
   h2#heading2 {
     font-size: 7vw;
@@ -1510,6 +1565,10 @@ p#footerLast {
   section.section1 {
     display: -ms-grid;
     display: grid;
+    margin: auto;
+  }
+  section.section2 {
+    width: 100%;
   }
   .section3Div2 {
     display: none;
@@ -1520,9 +1579,36 @@ p#footerLast {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  div#AluminiImg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4% 0% 0 14%;
+  }
   img.logo {
     width: 160px;
     margin-left: 0;
+  }
+  img.women {
+    width: 400px;
+    height: 500px;
+  }
+  h1#section7H1 {
+    margin: 5%;
+  }
+  .section7Div1 {
+    color: white;
+    margin: 2%;
+  }
+  .section3Div1 {
+    font-size: 18px;
+    width: 100%;
+  }
+  .footer {
+    padding: 0;
+  }
+  p#footerLast {
+    padding: 15% 0 15% 0;
   }
 }
 
