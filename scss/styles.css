@@ -73,6 +73,9 @@ select#courses {
 
 img.image-preview {
   width: 100%;
+  position: relative;
+  bottom: 4%;
+  left: 4%;
 }
 
 img.image-previewmobile {
@@ -83,14 +86,15 @@ img.image-previewmobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10%;
+  margin: 10% 3%;
+  gap: 20px;
 }
 
 button.check-availability {
   padding: 15px 25px;
   background-color: #00abae;
   border: 0;
-  margin: 20px;
+  margin: 20px 0 20px 0;
   color: white;
   width: 324px;
   height: 69px;
@@ -135,7 +139,7 @@ div#playVedeoDiv {
   border: 3px solid #00abae;
   border-radius: 50%;
   padding: 8px 2px 5px 11px;
-  height: 95%;
+  height: 100%;
 }
 
 h1.firstHeading {
@@ -146,7 +150,7 @@ h1.firstHeading {
   border: 3px solid rgba(0, 171, 174, 0.3);
   border-radius: 50%;
   padding: 14px;
-  height: 100%;
+  height: 92%;
   width: 44%;
 }
 
@@ -160,12 +164,23 @@ section.section1 {
   width: 90%;
 }
 
+.section1Div1 {
+  margin-top: 100px;
+}
+
 .section1Div2 {
   display: block;
+  display: block;
+  width: 35%;
+  border: 2px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 25px;
+  border-bottom-right-radius: 160px;
 }
 
 h1.heading1 {
-  font-family: "Avenir";
+  font-family: roboto;
   font-style: normal;
   font-weight: 900;
   font-size: 85px;
@@ -178,7 +193,7 @@ p.access.to.mentor {
   color: #00abae;
   text-align: start;
   margin: 0 0 0 25px;
-  font-family: "Avenir";
+  font-family: roboto;
   font-style: normal;
   font-weight: 800;
   font-size: 31px;
@@ -230,7 +245,7 @@ section.section2 {
   transition: 0.3s;
   width: 95%;
   background-color: #f1f1f1;
-  border-radius: 59px 120px 0px 5px;
+  border-top-right-radius: 90px;
   margin: 4% 0 10% 0;
 }
 
@@ -272,11 +287,6 @@ img.imgPreview {
 
 img.circleElement {
   margin: 20px 0 50px 0;
-  position: relative;
-  top: 65px;
-  left: 0;
-  width: 110px;
-  margin-right: 13%;
 }
 
 .section2Div2 {
@@ -322,6 +332,22 @@ img.circle2 {
 }
 
 /*****************section 3******************/
+.section3Div2 {
+  width: 50%;
+  border: 2px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 25px;
+  border-bottom-right-radius: 160px;
+}
+
+img.section3heroimg {
+  width: 100%;
+  position: relative;
+  bottom: 4%;
+  left: 4%;
+}
+
 section.section3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,17 +355,13 @@ section.section3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-left: 60px;
-  width: 90%;
+  width: 85%;
+  margin: 0 4% 5%;
 }
 
 .section3Div1 {
   font-size: 18px;
   width: 40%;
-}
-
-img.section3heroimg {
-  width: 80%;
 }
 
 img.section3heroimgmobile {
@@ -434,6 +456,7 @@ img.customercareImg {
   background-color: #f9f9f9;
   border-radius: 20px;
   padding: 20px;
+  height: 530px;
 }
 
 /****************** section 5 ******************/
@@ -444,6 +467,41 @@ img.customercareImg {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.section5DivTop2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  width: 90%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  border: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.section5paragraph2 {
+  width: 60%;
+}
+
+.studyBorder {
+  width: 70%;
+  border: 2px solid #00abae;
+  margin-top: 1%;
+  position: relative;
+  border-radius: 25px;
+  border-bottom-right-radius: 160px;
+}
+
+img.section5HeroImg {
+  width: 100%;
+  position: relative;
+  bottom: 4%;
+  left: 4%;
 }
 
 .section5Div1 {
@@ -538,25 +596,6 @@ p#insideParagraph {
   margin-left: 30px;
 }
 
-.section5DivTop2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  width: 90%;
-  margin: 5%;
-}
-
-img.section5HeroImg {
-  width: 40%;
-}
-
-.section5paragraph2 {
-  font-size: 15px;
-}
-
 span#headingInsidepara {
   font-family: "Roboto";
   font-style: normal;
@@ -648,6 +687,7 @@ section.courses {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0 90px 0 90px;
 }
 
 img#studentportfolio {
@@ -669,6 +709,7 @@ a#studentlink {
   display: grid;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
+  padding: 0 120px;
 }
 
 .skills1 {
@@ -700,6 +741,7 @@ span#color {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 100%;
+  padding: 0 120px;
 }
 
 img#alumini {
@@ -761,7 +803,8 @@ img.freecouncilingMobile {
 }
 
 img.women {
-  width: 50%;
+  width: 630px;
+  height: 670px;
 }
 
 p#section7Div1p {
@@ -769,7 +812,6 @@ p#section7Div1p {
   font-size: 21px;
   line-height: 32px;
   text-align: justify;
-  margin: 0 25%;
 }
 
 p#section7P {
@@ -798,7 +840,7 @@ div#eligibility {
   -webkit-box-shadow: 0px 19px 33px #6f6d7157;
           box-shadow: 0px 19px 33px #6f6d7157;
   border-radius: 25px;
-  margin: 50px;
+  margin: 70px;
 }
 
 img#eligibilityImg {
@@ -820,8 +862,8 @@ button.check-availabilityopposite {
   font-size: 18px;
   line-height: 21px;
   padding: 10px 20px;
-  margin: 5% 25%;
-  width: 324px;
+  margin: 5%;
+  width: 280px;
   height: 69px;
   background: #ffffff;
   border-radius: 6px;
@@ -884,10 +926,15 @@ p#answer {
 
 .section7Div1 {
   color: white;
+  margin: 2% 18% 6% 10%;
+  display: -ms-grid;
+  display: grid;
 }
 
 h1#section7H1 {
-  font-size: 39px;
+  font-size: 34px;
+  margin: 0;
+  text-align: left;
 }
 
 /********************** Footer ****************/
@@ -900,6 +947,7 @@ footer {
   font-size: 12px;
   background-color: #303030;
   margin: 0 30px;
+  padding: 40px 65px;
 }
 
 div#footerDiv1 {
@@ -972,8 +1020,8 @@ p#footerLast {
   .section6Div2 {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[5];
+        grid-template-columns: repeat(5, 1fr);
   }
   .alumini {
     width: 75%;
@@ -1039,6 +1087,7 @@ p#footerLast {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 10% 3%;
   }
   .alumini {
     width: 75%;
@@ -1111,6 +1160,9 @@ p#footerLast {
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
   }
+  h1#advanced {
+    font-size: 40px;
+  }
   .section6Div2,
   .skills {
     display: -ms-grid;
@@ -1141,7 +1193,7 @@ p#footerLast {
     line-height: 45px;
   }
   img.women {
-    width: 90%;
+    width: 80%;
   }
   h1#section7H1 {
     font-size: 35px;
@@ -1320,9 +1372,6 @@ p#footerLast {
     height: 42px;
     width: 184px;
     font-size: 12px;
-  }
-  img.section5HeroImg {
-    margin: auto;
   }
   img#skillsneeded,
   img#alumini {
