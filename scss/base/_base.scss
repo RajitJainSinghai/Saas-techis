@@ -173,7 +173,7 @@ img.company-img {
   width: 100px;
 }
 img.company-img-star {
-  width: 70%;
+  width: 42%;
 }
 .company-logo2 {
   justify-content: center;
@@ -188,7 +188,7 @@ button.button1 {
   background-color: $white;
   border-radius: 10px;
   margin: 8px;
-  padding: 15px 60px 0 45px;
+  // padding: 15px 60px 0 45px;
   box-shadow: $card;
   width: 210px;
   height: 87px;
@@ -498,6 +498,7 @@ span#headingInsidepara {
   background-color: #f9f9f9;
   border-radius: 20px;
   padding: 20px;
+  width: 100%;
 }
 ul.webDev {
   color: #929c9e;
@@ -538,18 +539,18 @@ button.learnMore {
 }
 .image12 {
   width: 100%;
-  margin-left: 15%;
+  margin-left: 8%;
   /* margin-bottom: 7%; */
   position: relative;
   bottom: 4%;
 }
 .image121 {
   width: 100%;
-  right: 15%;
+  right: 8%;
   /* margin-bottom: 7%; */
   position: relative;
   bottom: 4%;
-  margin-right: 15%;
+  margin-right: 8%;
   float: right;
 }
 section.courses {
@@ -790,6 +791,13 @@ a#footerLink {
   font-size: $small-heading;
   line-height: 50px;
 }
+a#footerLink1 {
+  color: white;
+  text-decoration: none;
+  margin: 5px 10px 5px;
+  font-size: 22px;
+  line-height: 50px;
+}
 .footerDiv2 {
   display: $grid;
   grid-template-columns: $repeat-two;
@@ -822,8 +830,12 @@ p#footerLast {
 /***************** LArge Desktop : 1400px ****************/
 @media screen and (max-width: $desktop-large) {
   h1#Heading1200 {
-    font-size: 39px;
+    font-size: 35px;
     margin: 0;
+    text-align: left;
+  }
+  .section1Div2 {
+    display: none;
   }
 
   button.check-availability {
@@ -852,7 +864,8 @@ p#footerLast {
     margin: auto;
   }
   .imgPreviewImage {
-    width: 90%;
+    width: 85%;
+    margin: 80px 26px 0;
   }
 
   .section6Div2 {
@@ -870,6 +883,14 @@ p#footerLast {
 
 /*************** Desktop : 1200px **************/
 @media screen and (max-width: $desktop) {
+  h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 56px;
+    text-align: center;
+    margin: 40px 0 50px;
+  }
   .webDEv24\/7 {
     height: auto;
   }
@@ -973,7 +994,12 @@ p#footerLast {
     grid-template-columns: repeat(1, 1fr);
   }
   h1#advanced {
-    font-size: 40px;
+    font-size: 35px;
+    padding: 10px;
+  }
+  p#about {
+    text-align: center;
+    padding: 0 30px;
   }
   .section6Div2,
   .skills {
@@ -1023,6 +1049,10 @@ p#footerLast {
     border-radius: 25px;
     // margin: 60px;
   }
+  h1#aluminis {
+    padding: 0;
+    margin: 35px 20px 0;
+  }
   img#eligibilityImg {
     width: 100%;
     display: block;
@@ -1034,6 +1064,7 @@ p#footerLast {
   img.section3heroimgmobile {
     display: block;
     width: $hundred;
+    margin: 15px;
   }
   img.section5HeroImg {
     width: 80%;
@@ -1156,7 +1187,8 @@ p#footerLast {
   }
 
   img.circle2 {
-    display: $none;
+    margin-top: 30px;
+    left: 65vw;
   }
 
   .section2Div2 {
@@ -1193,14 +1225,47 @@ p#footerLast {
   }
 }
 
-/************** Small-Phone : **********/
+/************** Small-Phone :600 **********/
 @media screen and (max-width: $small-phone) {
+  h1#highGrowth {
+    text-align: left;
+    font-size: 35px;
+    margin: 24px;
+  }
+  p#section5Div5para {
+    text-align: center;
+    padding: 0;
+  }
+  p#namePara {
+    padding: 20px;
+    margin: 0;
+  }
+  p#highGrowthPara {
+    margin: 24px;
+    text-align: left;
+  }
+  .imgPreviewImage {
+    border-bottom-left-radius: 70px;
+  }
+  .previewImg {
+    border-bottom-left-radius: 80px;
+  }
   header {
     margin: 20px 0 50px;
   }
+  img.circleElement {
+    display: none;
+  }
   button.button1 {
-    width: 180px;
-    height: 80px;
+    width: 150px;
+    height: 50px;
+    margin: 8px 17px 6px 20px;
+  }
+  img.company-img-star {
+    width: 32%;
+  }
+  img.company-img {
+    width: 90px;
   }
   .alumini {
     width: 100%;
@@ -1225,7 +1290,8 @@ p#footerLast {
     display: $grid;
   }
   img.footerLogo {
-    width: 40%;
+    width: 60%;
+    margin: 20px 0;
   }
   img.freecouncilingMobile {
     display: block;
@@ -1266,6 +1332,7 @@ p#footerLast {
     width: 90%;
     margin: auto;
     margin-top: 20px;
+    text-align: center;
   }
   .section5DivTop {
     display: $grid;
@@ -1283,8 +1350,11 @@ p#footerLast {
   .section5paragraph2 {
     width: 100%;
   }
+  button.learnMore {
+    width: 195px;
+  }
   .studyBorder {
-    border-bottom-right-radius: 63px;
+    border-bottom-right-radius: 150px;
     width: 100%;
   }
   img.section5HeroImg {
@@ -1317,18 +1387,26 @@ p#footerLast {
     width: 80%;
   }
   button.check-availability {
-    font-weight: 700;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 21px;
     margin: 5% auto;
     display: block;
+    height: 57px;
+    width: 284px;
   }
   p.access.to.mentor {
     font-weight: 800;
     font-size: 16px;
     line-height: 22px;
   }
-
+  div#eligibility {
+    margin: 30px;
+  }
+  p#aluminiP {
+    text-align: center;
+    padding: 27px;
+    font-size: 18px;
+  }
   .section2Div2 {
     margin: auto;
   }
@@ -1358,8 +1436,8 @@ p#footerLast {
     margin-left: 15px;
   }
   img.women {
-    width: 400px;
-    height: 500px;
+    width: 360px;
+    height: 440px;
   }
   h1#section7H1 {
     margin: 5%;
@@ -1368,14 +1446,29 @@ p#footerLast {
     color: white;
     margin: 2%;
   }
+  button.check-availabilityopposite {
+    height: 55px;
+    width: 300px;
+    font-size: 18px;
+    margin: 30px auto 35px;
+  }
+  h1 {
+    margin: 38px 55px 45px;
+  }
   .section3Div1 {
     font-size: 18px;
     width: 100%;
+    text-align: left;
+  }
+  .supportDiv {
+    margin: 35px auto;
   }
   .footer {
     padding: 0;
   }
-
+  p#answer {
+    margin: 0 12% 8%;
+  }
   p#footerLast {
     padding: 15% 0 15% 0;
   }
