@@ -521,7 +521,7 @@ button.learnMore {
 }
 
 .web {
-  width: 75%;
+  width: 98%;
   /* background-color: black; */
   border: 2px solid #00abae;
   margin-top: 1%;
@@ -529,7 +529,7 @@ button.learnMore {
   border-radius: 25px;
 }
 .web1 {
-  width: 75%;
+  width: 98%;
   /* background-color: black; */
   border: 2px solid #00abae;
   margin-top: 1%;
@@ -540,7 +540,7 @@ button.learnMore {
 .image12 {
   width: 100%;
   margin-left: 8%;
-  /* margin-bottom: 7%; */
+  margin-bottom: 7%;
   position: relative;
   bottom: 4%;
 }
@@ -769,7 +769,9 @@ footer {
   background-color: #303030;
   color: $white;
 }
-
+.footerIcon {
+  display: flex;
+}
 .footer {
   font-size: 12px;
   background-color: #303030;
@@ -804,7 +806,7 @@ a#footerLink1 {
 }
 img#footerImg {
   // margin: 10px;
-  width: 50px;
+  width: 25px;
   background: white;
   border-radius: 40px;
   margin: 10px;
@@ -965,7 +967,7 @@ p#footerLast {
     margin: 8%;
   }
   .web1 {
-    margin: 16.5%;
+    margin: 0 20px 0 60px;
   }
   .skills {
     display: grid;
@@ -1188,7 +1190,8 @@ p#footerLast {
 
   img.circle2 {
     margin-top: 30px;
-    left: 65vw;
+    left: 75vw;
+    width: 63px;
   }
 
   .section2Div2 {
@@ -1259,10 +1262,15 @@ p#footerLast {
   button.button1 {
     width: 150px;
     height: 50px;
-    margin: 8px 17px 6px 20px;
+    margin: 8px 12px 8px 12px;
   }
   img.company-img-star {
     width: 32%;
+  }
+  section.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   img.company-img {
     width: 90px;
@@ -1423,6 +1431,9 @@ p#footerLast {
   .section3Div2 {
     display: $none;
   }
+  section.section4 {
+    padding: 0px;
+  }
   .section4Div1 {
     display: $grid;
     grid-template-columns: $repeat-one;
@@ -1438,6 +1449,7 @@ p#footerLast {
   img.women {
     width: 360px;
     height: 440px;
+    object-fit: contain;
   }
   h1#section7H1 {
     margin: 5%;
@@ -1453,7 +1465,7 @@ p#footerLast {
     margin: 30px auto 35px;
   }
   h1 {
-    margin: 38px 55px 45px;
+    margin: 0;
   }
   .section3Div1 {
     font-size: 18px;
@@ -1461,7 +1473,7 @@ p#footerLast {
     text-align: left;
   }
   .supportDiv {
-    margin: 35px auto;
+    margin: 35px 24px;
   }
   .footer {
     padding: 0;
@@ -1471,5 +1483,13 @@ p#footerLast {
   }
   p#footerLast {
     padding: 15% 0 15% 0;
+  }
+  .divFooter {
+    border: 1px solid;
+    width: 47px;
+    height: 47px;
+    margin: 10px;
+    border-radius: 50%;
+    background: white;
   }
 }
